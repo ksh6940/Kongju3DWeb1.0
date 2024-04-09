@@ -16,12 +16,24 @@ function autoResize() {
 
 document.getElementById('text').addEventListener('input', autoResize);
 
+function EmailAdress(){
+    const element = document.getElementById('email').value
+
+    if (element === "견적" || element === 프린팅){
+        const mailAdress = "20231720@kongjugo.cnehs.kr"
+    } else {
+        const mailAdress = "20231601@kongjugo.cnehs.kr"
+    }
+
+    return mailAdress
+}
+
 function SendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "sukhogang@gmail.com",
         Password : "17F50ED7480F4E336680224A523E5D3E0972",
-        To : "20231601@kongjugo.cnehs.kr",
+        To : EmailAdress();
         From : "sukhogang@gmail.com",
         Subject : getTitle(),
         Body : getContent()
