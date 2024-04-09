@@ -17,10 +17,10 @@ function autoResize() {
 document.getElementById('text').addEventListener('input', autoResize);
 
 function EmailAdress(){
-    const element = document.getElementById('email').value;
+    const email = document.getElementById('email').value;
     let mailAdress = "20231601@kongjugo.cnehs.kr";
 
-    if (element === "견적" || element === 프린팅){
+    if (email === "견적" || email === "프린팅"){
         let mailAdress = "20231720@kongjugo.cnehs.kr";
     }
 
