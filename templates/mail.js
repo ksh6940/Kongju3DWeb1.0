@@ -17,15 +17,14 @@ function autoResize() {
 document.getElementById('text').addEventListener('input', autoResize);
 
 function EmailAdress(){
-    const element = document.getElementById('email').value
+    const element = document.getElementById('email').value;
+    let mailAdress = "20231601@kongjugo.cnehs.kr";
 
     if (element === "견적" || element === 프린팅){
-        let mailAdress = "20231720@kongjugo.cnehs.kr"
-    } else {
-        let mailAdress = "20231601@kongjugo.cnehs.kr"
+        let mailAdress = "20231720@kongjugo.cnehs.kr";
     }
 
-    return mailAdress
+    return mailAdress;
 }
 
 function SendEmail(){
@@ -33,7 +32,7 @@ function SendEmail(){
         Host : "smtp.elasticemail.com",
         Username : "sukhogang@gmail.com",
         Password : "17F50ED7480F4E336680224A523E5D3E0972",
-        To : EmailAdress();
+        To : EmailAdress(),
         From : "sukhogang@gmail.com",
         Subject : getTitle(),
         Body : getContent()
