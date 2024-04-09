@@ -18,7 +18,6 @@ document.getElementById('text').addEventListener('input', autoResize);
 
 function EmailAdress(){
     const email = document.getElementById('dropdown').value;
-    alert(email);
 
     let mailAdress = "";
 
@@ -27,8 +26,6 @@ function EmailAdress(){
     } else {
         mailAdress = "20231601@kongjugo.cnehs.kr";
     }
-
-    alert(mailAdress);
 
     return mailAdress;
 }
