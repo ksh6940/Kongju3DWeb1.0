@@ -17,11 +17,10 @@ function autoResize() {
 document.getElementById('text').addEventListener('input', autoResize);
 
 function EmailAdress(){
-    const email = document.getElementById('email').value;
+    const email = document.getElementById('dropdown').value;
     console.log(email);
 
     let mailAdress = "";
-
 
     if (email === "견적" || email === "프린팅"){
         mailAdress = "20231720@kongjugo.cnehs.kr";
