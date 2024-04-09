@@ -18,7 +18,7 @@ document.getElementById('text').addEventListener('input', autoResize);
 
 function EmailAdress(){
     const email = document.getElementById('dropdown').value;
-    console.log(email);
+    alert(email);
 
     let mailAdress = "";
 
