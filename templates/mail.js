@@ -20,9 +20,9 @@ function EmailAdress(){
     const element = document.getElementById('email').value
 
     if (element === "견적" || element === 프린팅){
-        const mailAdress = "20231720@kongjugo.cnehs.kr"
+        let mailAdress = "20231720@kongjugo.cnehs.kr"
     } else {
-        const mailAdress = "20231601@kongjugo.cnehs.kr"
+        let mailAdress = "20231601@kongjugo.cnehs.kr"
     }
 
     return mailAdress
