@@ -18,11 +18,18 @@ document.getElementById('text').addEventListener('input', autoResize);
 
 function EmailAdress(){
     const email = document.getElementById('email').value;
-    let mailAdress = "20231601@kongjugo.cnehs.kr";
+    console.log(email);
+
+    let mailAdress = "";
+
 
     if (email === "견적" || email === "프린팅"){
-        let mailAdress = "20231720@kongjugo.cnehs.kr";
+        mailAdress = "20231720@kongjugo.cnehs.kr";
+    } else {
+        mailAdress = "20231601@kongjugo.cnehs.kr";
     }
+
+    alert(mailAdress);
 
     return mailAdress;
 }
