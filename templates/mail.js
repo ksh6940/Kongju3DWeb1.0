@@ -21,7 +21,7 @@ function SendEmail(){
         Host : "smtp.elasticemail.com",
         Username : "sukhogang@gmail.com",
         Password : "17F50ED7480F4E336680224A523E5D3E0972",
-        To : "20231720@kongjugo.cnehs.kr",
+        To : "20231601@kongjugo.cnehs.kr",
         From : "sukhogang@gmail.com",
         Subject : getTitle(),
         Body : getContent()
